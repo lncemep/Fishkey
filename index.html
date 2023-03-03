@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Fishkey</title>
+  <link href="style.css" rel="stylesheet" />
+  <script src="script.js"></script>
+  <link type="image/x-icon" href="minilogo.png" rel="shortcut icon">
+</head>
+<body onload="Quiz()">
+
+	<audio id="nice" src="nice.mp3"></audio>
+	<audio id="eror" src="eror.mp3"></audio>
+	<audio id="switch2" src="switch.mp3"></audio>
+
+	<button id="mute-button">🔊</button>
+	<script>
+		var audioElements = [document.getElementById("nice"), document.getElementById("eror"), document.getElementById("switch2")];
+		var muteButton = document.getElementById("mute-button");
+		var isMuted = false;
+		muteButton.addEventListener("click", function() {
+			isMuted = !isMuted;
+			audioElements.forEach(function(audio) {
+				audio.muted = isMuted;
+			});
+			muteButton.textContent = isMuted ? "🔇" : "🔊";
+		});
+	</script>
+
+	<img id="logo" src="logo.gif">
+	<img id="nazwa" src="background.png">
+	<div id="switch" onclick="SwitchLanguage()">pol-ang</div>
+
+
+	<div id="clear"></div>
+	<div id="cardcontainer">
+		<div id="card">
+			<div id="front">
+				<div id="score" >
+				0%
+				</div>
+				<div id="question" >
+				
+
+				</div>
+				<div id="category" >
+				0
+				</div>
+				<div id="clear"></div>
+				<div id="answer1" onclick="Answer(1)" onmouseenter="Hovering(this)" onmouseleave="UnHovering(this)">
+				
+				
+				</div>
+				<div id="answer2" onclick="Answer(2)" onmouseenter="Hovering(this)" onmouseleave="UnHovering(this)">
+				
+				
+				</div>
+				<div id="clear"></div>
+				<div id="answer3" onclick="Answer(3)" onmouseenter="Hovering(this)" onmouseleave="UnHovering(this)">
+				
+				
+				</div>
+				<div id="answer4" onclick="Answer(4)" onmouseenter="Hovering(this)" onmouseleave="UnHovering(this)">
+				
+				
+				</div>
+			</div>
+			<div id="back">
+				<div id="hidscore" >
+				0
+				</div>
+				<div id="hidquestion" >
+				
+
+				</div>
+				<div id="hidcategory" >
+				0
+				</div>
+				<div id="clear"></div>
+				<div id="hidanswer1" onclick="Answer(1)" onmouseenter="Hovering(this)" onmouseleave="UnHovering(this)">
+				
+				
+				</div>
+				<div id="hidanswer2" onclick="Answer(2)" onmouseenter="Hovering(this)" onmouseleave="UnHovering(this)">
+				
+				
+				</div>
+				<div id="clear"></div>
+				<div id="hidanswer3" onclick="Answer(3)" onmouseenter="Hovering(this)" onmouseleave="UnHovering(this)">
+				
+				
+				</div>
+				<div id="hidanswer4" onclick="Answer(4)" onmouseenter="Hovering(this)" onmouseleave="UnHovering(this)">
+				
+				
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
