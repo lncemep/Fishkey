@@ -495,7 +495,7 @@ body
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		font-size: 22px;
+		font-size: 100%;
 		color: #000000;
 		font-family: Tahoma;
 		text-transform: uppercase;
