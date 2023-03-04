@@ -6,7 +6,7 @@ var games=0;
 var wins=0;
 var trueside=true;
 
-const mediaQuery = window.matchMedia( '( min-width: 600px )' )
+const mediaQuery = window.matchMedia( '( min-width: 900px )' )
 
 function GraphicReset()
 {
