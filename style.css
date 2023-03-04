@@ -556,7 +556,7 @@ body
 	{
 		float:left;
 		margin-left: 10%;
-		margin-top: 5%;
+		margin-top: 4%;
 		background: linear-gradient(to right, #00c6ff, #0072ff);
 		width: 4em;
 		height: 3em;
@@ -578,7 +578,7 @@ body
 		float: left;
 		margin-left: 6%;
 		margin-right: 6%;
-		margin-top: 5%;
+		margin-top: 1%;
 		background: linear-gradient(to top, #99daf8, #c4ecff);
 		width: 88%;
 		height: 12%;
@@ -599,7 +599,7 @@ body
 	{
 		float: left;
 		margin-left: 22%;
-		margin-top: 5%;
+		margin-top: 4%;
 		background: linear-gradient(to right, #00c6ff, #0072ff);
 		width: 4em;
 		height: 3em;
@@ -624,7 +624,7 @@ body
 	{
 		margin-left: 6%;
 		margin-right: 6%;
-		margin-top: 5%;
+		margin-top: 3%;
 		background: linear-gradient(to right, #00c6ff, #0072ff);
 		width: 88%;
 		height: 12%;
